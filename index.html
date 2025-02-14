@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <!-- Meta-Tags für Zeichenkodierung, Viewport und SEO -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Elisabeth Mair Solo-Oboistin der Wiener Philharmoniker. Geboren in Salzburg, weltweit gefragt für Soloauftritte und Arrangements. Jetzt anfragen!">
+    <meta name="keywords" content="Oboistin, Solo-Oboe, Wiener Philharmoniker, Elisabeth Mair, Mozart, Klassik, Musik">
+    <meta property="og:title" content="Elisabeth Mair – Solo-Oboistin">
+    <meta property="og:description" content="Elisabeth Mair – Solo-Oboistin der Wiener Philharmoniker. Geboren in Salzburg, weltweit gefragt für Soloauftritte und Arrangements. Jetzt anfragen!">
+    <meta property="og:image" content="https://www.deinewebsite.de/bilder/e.jpeg">
+    <meta property="og:url" content="https://www.deinewebsite.de">
+    <title>Elisabeth Mair – Solo-Oboistin</title>
+    <!-- Google Fonts für das Design -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Externe CSS-Datei -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<!-- Modal für vergrößerte Bilder -->
+                <div id="myModal" class="modal" onclick="closeModalOnClick(event)">
+                    <span class="close" onclick="closeModal()">&times;</span>
+                    <img class="modal-content" id="modalImg">
+                    <a class="prev" onclick="changeImage(-1)">&#10094;</a>
+                    <a class="next" onclick="changeImage(1)">&#10095;</a>
+                </div>
+    <!-- Dark Mode Switch -->
+    <div class="dark-mode-switch">
+        <label for="dark-mode-toggle">Dark Mode</label>
+        <input type="checkbox" id="dark-mode-toggle">
+    </div>
+    <!-- Hauptnavigation -->
+    <nav aria-label="Hauptnavigation">
+        <a href="#about">Über mich</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#services">Leistungen</a>
+        <a href="#testimonials">Referenzen</a>
+        <a href="#contact">Kontakt</a>
+    </nav>
+    <!-- Header mit Titel -->
+    <header>
+        <h1>Elisabeth Mair &nbsp Solo-Oboistin</h1>
+    </header>
+    <!-- Über mich Abschnitt -->
+    <section id="about">
+        <h2>Über mich</h2>
+        <div class="about-container">
+            <div class="about-text">
+                <p>Geboren 1973 in Salzburg, begann ich meine musikalische Ausbildung am Mozarteum bei Prof. Franz Micheldorfer. Seit 1991 bin ich als Solo-Oboistin bei den Wiener Philharmonikern tätig und habe zahlreiche Auszeichnungen im In- und Ausland erhalten.</p>
+                <p>Seit 1998 leite ich einen Lehrstuhl an der Universität Bologna und widme mich der Förderung junger Musiker. Meine Leidenschaft gilt der Interpretation klassischer Werke und der Zusammenarbeit mit Orchestern und Solisten weltweit.</p>
+                <a href="#contact" class="cta-button" aria-label="Kontaktiere mich">Kontaktiere mich</a>
+            </div>
+            <div class="about-image">
+                <img src="bilder/a.jpeg" alt="Elisabeth Mair" loading="lazy">
+            </div>
+        </div>
+    </section>
+    <!-- Portfolio Abschnitt -->
+    <section id="portfolio">
+        <h2>Portfolio</h2>
+        <div class="portfolio-section">
+            <div class="portfolio-gallery">
+                <div class="gallery">
+                    <img src="bilder/b.jpeg" alt="Bild 1" onclick="openModal(0)" loading="lazy">
+                    <img src="bilder/c.jpeg" alt="Bild 2" onclick="openModal(1)" loading="lazy">
+                    <img src="bilder/d.jpeg" alt="Bild 3" onclick="openModal(2)" loading="lazy">
+                    <img src="bilder/f.jpeg" alt="Bild 4" onclick="openModal(3)" loading="lazy">
+                    <img src="bilder/g.jpeg" alt="Bild 5" onclick="openModal(4)" loading="lazy">
+                    <img src="bilder/h.jpeg" alt="Bild 6" onclick="openModal(5)" loading="lazy">
+                </div>
+                
+            </div>
+        </div>
+    </section>
+    <!-- Leistungen Abschnitt -->
+    <section id="services">
+        <h2>Leistungen</h2>
+        <p>Meine Angebote umfassen:</p>
+        <ul style="list-style-type: none; font-size: 1.6em;">
+            <li>- Soloauftritte mit Orchester</li>
+            <li>- Kammermusik-Konzerte</li>
+            <li>- Meisterkurse und Workshops</li>
+            <li>- Arrangements und Kompositionen</li>
+            <li>- Aufnahmen für CDs und Filmmusik</li>
+        </ul>
+    </section>
+    <!-- Referenzen Abschnitt -->
+    <section id="testimonials">
+        <h2>Referenzen</h2>
+        <div class="testimonials">
+            <div class="testimonial">
+                <p>"Elisabeth Mair ist eine außergewöhnliche Künstlerin, deren Spiel die Herzen des Publikums berührt."</p>
+                <cite>– Wiener Philharmoniker</cite>
+            </div>
+            <div class="testimonial">
+                <p>"Ihre Meisterkurse sind eine Inspiration für junge Musiker."</p>
+                <cite>– Universität Bologna</cite>
+            </div>
+        </div>
+    </section>
+    <!-- Kontakt Abschnitt -->
+    <section id="contact">
+        <h2>Kontakt</h2>
+        <p>Für Soloauftritte, Arrangements oder Anfragen zu Meisterkursen:</p>
+        <p>Email: <span class="contact-link" onclick="copyToClipboard('elisabeth.mair@musik.at')">elisabeth.mair@musik.at</span></p>
+        <p>Telefon: <span class="contact-link" onclick="copyToClipboard('+43 123 456789')">+43 123 456789</span></p>
+        <p>
+            <a href="https://instagram.com/elisabethmair" target="_blank" class="contact-link">Instagram</a> | 
+            <a href="https://facebook.com/elisabethmair" target="_blank" class="contact-link">Facebook</a> | 
+            <a href="https://twitter.com/elisabethmair" target="_blank" class="contact-link">Twitter</a>
+        </p>
+    </section>
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Elisabeth Mair – Alle Rechte vorbehalten</p>
+        <p><a href="impressum.html">Impressum</a> | <a href="datenschutz.html">Datenschutz</a></p>
+    </footer>
+    <!-- Externe JavaScript-Datei -->
+    <script src="script.js"></script>
+</body>
+</html>
