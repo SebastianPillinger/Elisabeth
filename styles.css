@@ -339,7 +339,7 @@ footer a:hover {
 
 /* Responsive Design */
 @media (max-width: 768px) {
-    header h1 { font-size: 2.5em; }
+    header h1 { font-size: 1.5em; }
     nav a { font-size: 1.2em; margin: 0 10px; }
     .about-container { flex-direction: column; text-align: center; }
     .about-image img { width: 100%; max-width: 300px; }
