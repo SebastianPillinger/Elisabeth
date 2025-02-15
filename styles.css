@@ -54,7 +54,7 @@ header h1 {
 /* Anpassungen für Hochformat (Portrait) auf Mobilgeräten */
 @media (max-width: 768px) and (orientation: portrait) {
     header h1 {
-        font-size: 2.5em; /* Noch kleinere Schriftgröße im Hochformat */
+        font-size: 1.5em; /* Noch kleinere Schriftgröße im Hochformat */
         padding: 10px; /* Weniger Abstand */
     }
 }
